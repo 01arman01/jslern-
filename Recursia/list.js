@@ -25,3 +25,20 @@ funcListValueRecursia = (list)=>{
     }
 }
 console.log(funcListValueRecursia(list))
+
+//------------------------------------------------
+console.log('-----------------------------------------------')
+let funcreverse = (list)=>{
+    let newlist = list
+    let arr = []
+    while (newlist) {
+        arr.push(newlist.value)
+        newlist = newlist.next
+    }
+
+    for (let i= arr.length -1; i>=0;i--){
+        console.log(arr[i])
+    }
+
+}
+funcreverse(list)
