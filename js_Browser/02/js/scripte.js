@@ -28,6 +28,17 @@ console.log(styleTest.style.border)
 console.log('--------------test for href link a-------------------')
 console.log(link.getAttribute('href'))
 console.log(link.href)
-alert(link.href)
-
-
+// alert(link.href)
+console.log('--------------test attribute-------------------')
+let user = {
+    age:22,
+    name:'Arman'
+}
+for (let div of document.querySelectorAll('[show_info]')){
+    let field = div.getAttribute('show_info')
+    div.innerHTML = user[field]
+}
+console.log('--------------test attribute data -------------------')
+let dataElement  =document.querySelector('div[data-order-state="new"]')
+// console.log(dataElement.dataset.about)
+dataElement.dataset.orderState ="pending"

@@ -11,6 +11,15 @@
             color: white;
             background-color: #000000;
         }
+        .order[data-order-state="new"]{
+            color: green;
+        }
+        .order[data-order-state="pending"]{
+            color: blue;
+        }
+        .order[data-order-state="canceled"]{
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -19,8 +28,14 @@
 <input type="text">
 <input type="checkbox" checked>
 <a href="#test_link">link</a>
-
-
+<div show_info="age"></div>
+<div show_info="name"></div>
+<!--attribute  orders-->
+<div class="order" data-order-state="new">a new order</div>
+<!--<div class="order" data-order-state="pending">a pending order</div>-->
+<!--<div class="order" dadata-ta-order-state="canceled">a canceled order</div>-->
+<!--attribute data- -->
+<div data-about="Elements"></div>
 <script type="text/javascript" src="js/scripte.js"></script>
 </body>
 </html>
