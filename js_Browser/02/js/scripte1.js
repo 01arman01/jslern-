@@ -8,3 +8,5 @@ for(let element of listElements){
        element.style.color = "orange"
    }
 }
+let textNode = document.createTextNode('hi i am Arman')
+console.log(textNode)
